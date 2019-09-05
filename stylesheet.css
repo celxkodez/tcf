@@ -1,3 +1,7 @@
+
+
+
+
 *{
 	margin: 0;
 	padding:0;
@@ -19,36 +23,51 @@ header .nav {
 	margin-left: 50px;
 	margin-top: 5px;
 }
-.nav .logo p{
+ .logo p{
 	padding-top: 5px;
 	color: white;
 
 }
-.nav .logo h3{
+.logo h3{
 	color: #EFB413;
 
 }
 #menu {
 	margin-left: 400px;
 }	
-#menu li {
+.Navbar-Items li {
 	list-style: none;
 	display: block;
 	float: left;
 	clear: all;
+	border-top: solid 2px rgb(134, 127, 177);
+	border-bottom: solid 2px rgb(134, 127, 177);	
+	/* border-radius: 5px; */
+	margin: 3px;
+	padding: 0px;
 }
-#menu li a{
+.Navbar-Items li a{
 	display: block;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	padding: 5px;
-	margin: 12px 12px;
-	font-size: 12px;
-	color: #000;
+	margin: 5px 5px;
+	font-size: 13px;
+	color: rgb(255, 255, 255);
 	text-decoration: none;
-	padding-top: 15px;
+	/* padding-top: 15px; */
 }
-#menu li a:hover {
-	color: white;
+
+.Navbar-Items li:hover {
+	background-color: #f1f1f1;
+}
+.Navbar-Items li a:hover {
+	color: #104280;
+}
+.fas {
+	/* padding-top: 50px;  */
+	border: solid 2px rgb(134, 127, 177);
+	border-radius: 2px;
+	padding: 10px;
 }
 .donate-button a {
 	border-radius: 5px;
@@ -68,8 +87,8 @@ header .nav {
 }
 .text-area{
 	color: #fff;
-	padding-left: 200px;
-	padding-top: 200px;
+	padding: 200px;
+	/* padding-top: 200px; */
 }
 .text-area h1 {
 	padding-bottom: 5px;
@@ -79,7 +98,7 @@ header .nav {
 	padding-bottom: 20px;
 }
 .text-area p {
-	width: 400px;
+	/* width: 400px; */
 	letter-spacing: 2px;
 	line-height: 20px;
 }
@@ -270,3 +289,61 @@ a {
 }
 /* style for team page starts here */
 
+.Navbar {
+	background-color: #1a5094;
+	display: flex;
+	padding: 16px;
+	font-family: sans-serif;
+	color: white;
+  }
+  
+  .Navbar-Link a {
+	padding: 8px;
+	font-size: 1.5em;
+	color: #ffffff;
+  }
+  
+  .Navbar-Items {
+	margin-top: 0px;
+	display: flex;
+  }
+  
+  .Navbar-Items-right {
+	margin-left:auto;
+  }
+  
+  .Navbar-Link-toggle {
+	display: none;
+  }
+  
+  @media only screen and (max-width: 768px) {
+	.Navbar-Items,
+	.Navbar {
+	  flex-direction: column;
+	}
+
+	.text-area{
+		color: #fff;
+		padding: 80px;
+		/* padding-top: 200px; */
+	}
+	  
+  .Navbar-Items {
+	  display:none;
+	}
+	  
+  .Navbar-Items-right {
+	  margin-left:0;
+	}
+	  
+  .Navbar-ToggleShow {
+	  display: flex;
+	}
+	  
+  .Navbar-Link-toggle {
+	  align-self: flex-end;
+	  display: initial;
+	  position: absolute;
+	  cursor: pointer;
+	 } 
+  }
